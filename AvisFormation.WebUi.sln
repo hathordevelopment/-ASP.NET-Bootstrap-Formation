@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.27703.2026
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AvisFormation.WebUi", "AvisFormation.WebUi\AvisFormation.WebUi.csproj", "{60B750FC-29A6-4579-A545-8C6FB36B3566}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AvisFormation.Data", "AvisFormation.Data\AvisFormation.Data.csproj", "{8403D07B-C63B-44EF-9DD4-BBD30B0440F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AvisFormation.Logic", "AvisFormation.Logic\AvisFormation.Logic.csproj", "{58A71945-EE13-474D-93B2-19497A2AE387}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{60B750FC-29A6-4579-A545-8C6FB36B3566}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{60B750FC-29A6-4579-A545-8C6FB36B3566}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{60B750FC-29A6-4579-A545-8C6FB36B3566}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8403D07B-C63B-44EF-9DD4-BBD30B0440F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8403D07B-C63B-44EF-9DD4-BBD30B0440F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8403D07B-C63B-44EF-9DD4-BBD30B0440F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8403D07B-C63B-44EF-9DD4-BBD30B0440F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58A71945-EE13-474D-93B2-19497A2AE387}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58A71945-EE13-474D-93B2-19497A2AE387}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58A71945-EE13-474D-93B2-19497A2AE387}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58A71945-EE13-474D-93B2-19497A2AE387}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
