@@ -17,7 +17,7 @@ namespace AvisFormation.Data
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Formation()
         {
-            this.Avis = new HashSet<Avi>();
+            this.Avis = new HashSet<Avis>();
         }
     
         public int Id { get; set; }
@@ -27,6 +27,6 @@ namespace AvisFormation.Data
         public string NomSeo { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Avi> Avis { get; set; }
+        public virtual ICollection<Avis> Avis { get; set; }
     }
 }

@@ -49,7 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Avi.cs">
+    <Compile Include="Avis.cs">
       <DependentUpon>AvisFormationDbModel.tt</DependentUpon>
     </Compile>
     <Compile Include="AvisFormationDbModel.Context.cs">

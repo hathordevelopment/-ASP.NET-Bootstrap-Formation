@@ -12,7 +12,7 @@ namespace AvisFormation.Data
     using System;
     using System.Collections.Generic;
     
-    public partial class Avi
+    public partial class Avis
     {
         public int Id { get; set; }
         public string Nom { get; set; }

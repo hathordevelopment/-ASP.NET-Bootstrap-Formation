@@ -8,7 +8,7 @@ namespace AvisFormation.WebUi.Controllers
 {
     public class HomeController : Controller
     {
-        public ActionResult Index()
+        public ActionResult Acceuil()
         {
             return View();
         }
