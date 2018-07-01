@@ -31,26 +31,27 @@ namespace AvisFormation.WebUi.Controllers
             return View(vm);
         }
 
-        public ActionResult SaveComment(string commentaire, string nom, string note, string nomSeo)
+        //  public ActionResult SaveComment(string commentaire, string nom, string note, string nomSeo)
+        public ActionResult SaveComment(SaveCommentViewModel comment)
         {
             Avis nouvelAvis = new Avis
             {
                 DateAvis = DateTime.Now,
-                Description = commentaire,
-                Nom = nom
+                Description = comment.Commentaire,
+                Nom = comment.Nom
             };
 
             double dNote = 0;
-            if(!double.TryParse(note, NumberStyles.Any, CultureInfo.InvariantCulture, out dNote))
+            if(!double.TryParse(comment.Note, NumberStyles.Any, CultureInfo.InvariantCulture, out dNote))
             {
-                throw new Exception("Impossible de parser la note " + note);
+                throw new Exception("Impossible de parser la note " + comment.Note);
             }
             nouvelAvis.Note = dNote;
 
             using (var context = new AvisEntities())
             {
                 var formationEntity = context.Formations
-                    .FirstOrDefault(f=>f.NomSeo == nomSeo);
+                    .FirstOrDefault(f=>f.NomSeo == comment.NomSeo);
 
                 if (formationEntity == null)
                     return RedirectToAction("Acceuil", "Home");
@@ -61,7 +62,7 @@ namespace AvisFormation.WebUi.Controllers
                 context.SaveChanges();
             }
 
-            return View();
+            return RedirectToAction("DetailsFormation", "Formation", new { nomSeo = comment.NomSeo });
         }
     }
 }
